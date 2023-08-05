@@ -36,6 +36,18 @@
                                 </textarea>
                             </div>
                         </div>
+                        <div class="sm:col-span-6">
+                            <label for="title" class="black text-sm font-medium text-gray-700">Categories</label>
+                            <div class="mt-1">
+                                <select multiple>
+                                    @foreach ($categories as $category)
+                                        <option>
+                                            {{ $category->name }}
+                                        </option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
                         <div class="mt-6 p-4">
                             <button type="submit"
                                 class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white">Store
