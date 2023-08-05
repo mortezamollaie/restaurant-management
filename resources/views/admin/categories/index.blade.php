@@ -23,8 +23,8 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                            @foreach ($categories as $category)
+                        @foreach ($categories as $category)
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <td
                                     class="px-6 py-4
                                 text-sm font-medium text-gray-900 whitespace-nowrapdark:text-white">
@@ -32,13 +32,13 @@
                                 <td
                                     class="px-6 py-4
                                 text-sm font-medium text-gray-900 whitespace-nowrapdark:text-white">
-                                    <img src={{ Storage::url($category->image) }} class="w-16 h-16 rounded">
+                                    <img src="{{ Storage::url($category->image) }}" class="w-16 h-16 rounded">
                                 </td>
                                 <td
                                     class="px-6 py-4
                                 text-sm font-medium text-gray-900 whitespace-nowrapdark:text-white">
                                     {{ $category->description }}</td>
-                            @endforeach
+                        @endforeach
                         </tr>
 
                     </tbody>
