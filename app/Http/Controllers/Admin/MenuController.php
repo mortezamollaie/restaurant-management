@@ -105,7 +105,6 @@ class MenuController extends Controller
     {
         Storage::delete($menu->image);
         $menu->delete();
-
         return to_route('admin.menus.index');
     }
 }
