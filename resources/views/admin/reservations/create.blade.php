@@ -13,27 +13,53 @@
             </div>
             <div class="m-2 p-2 bg-slate-100 rounded">
                 <div class="space-y-8 divide-y divide-gray-200 w-1/2 mt-10">
-                    <form enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('admin.reservations.store') }}">
+                        @csrf
                         <div class="sm:col-span-6">
-                            <label for="title" class="black text-sm font-medium text-gray-700">Name</label>
+                            <label for="first_name" class="black text-sm font-medium text-gray-700">First Name</label>
                             <div class="mt-1">
-                                <input type="text" id="title" wire:model.lazy="title" name="title"
-                                    class="black w-full transition duration-150 ease-in-out appearance-none rounded-md ">
+                                <input type="text" id="first_name"name="first_name"
+                                    class="black w-full appearance-none rounded-md ">
                             </div>
                         </div>
                         <div class="sm:col-span-6">
-                            <label for="title" class="black text-sm font-medium text-gray-700">Image</label>
+                            <label for="last_name" class="black text-sm font-medium text-gray-700">Last Name</label>
                             <div class="mt-1">
-                                <input type="file" id="image" wire:model="newImage" name="image"
-                                    class="black w-full transition duration-150 ease-in-out appearance-none bg-white border border-gray-400 rounded-md  py-2 px-2">
+                                <input type="text" id="last_name" name="last_name"
+                                    class="black w-full appearance-none rounded-md ">
                             </div>
                         </div>
                         <div class="sm:col-span-6">
-                            <label for="title" class="black text-sm font-medium text-gray-700">Description</label>
+                            <label for="email" class="black text-sm font-medium text-gray-700">Email</label>
                             <div class="mt-1">
-                                <textarea id="body" rows="3" wire:model.lazy="body"
-                                    class="shadow-sm focus:ring-indigo-500 appearance-none bg-white border border-gray-400 rounded-md py-2">
-                                </textarea>
+                                <input type="email" id="email" name="email"
+                                    class="black w-full appearance-none rounded-md ">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-6">
+                            <label for="tel_number" class="black text-sm font-medium text-gray-700">Phone number</label>
+                            <div class="mt-1">
+                                <input type="text" id="tel_number"name="tel_number"
+                                    class="black w-full appearance-none rounded-md ">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-6">
+                            <label for="res_date" class="black text-sm font-medium text-gray-700">Reservation
+                                Date</label>
+                            <div class="mt-1">
+                                <input type="datetime-local" id="res_date" name="res_date"
+                                    class="black w-full appearance-none rounded-md ">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-6">
+                            <label for="status" class="black text-sm font-medium text-gray-700">Table</label>
+                            <div class="mt-1">
+                                <select id="table_id" name="table_id" class="form-multiselect block w-full mt-1">
+                                    @foreach ($tables as $table)
+                                        <option value="{{ $table->id }}">{{ $table->name }}
+                                        </option>
+                                    @endforeach
+                                </select>
                             </div>
                         </div>
                         <div class="mt-6 p-4">
