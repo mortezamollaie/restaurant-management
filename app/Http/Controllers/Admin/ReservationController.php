@@ -15,8 +15,9 @@ class ReservationController extends Controller
      */
     public function index()
     {
-        $reservation = Reservation::all();
-        return view('admin.reservations.index', compact('reservation'));
+        // $reservation = Reservation::all();
+        // return view('admin.reservations.index', compact('reservation'));
+        return view('admin.reservations.index');
     }
 
     /**
@@ -33,6 +34,7 @@ class ReservationController extends Controller
      */
     public function store(ReservationStoreRequest $request)
     {
+
         Reservation::create($request->validated());
 
         return to_route('admin.reservations.index');

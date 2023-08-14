@@ -18,7 +18,7 @@
                         <div class="sm:col-span-6">
                             <label for="first_name" class="black text-sm font-medium text-gray-700">First Name</label>
                             <div class="mt-1">
-                                <input type="text" id="first_name"name="first_name"
+                                <input type="text" id="first_name" name="first_name"
                                     class="black w-full appearance-none rounded-md ">
                             </div>
                         </div>
@@ -39,7 +39,7 @@
                         <div class="sm:col-span-6">
                             <label for="tel_number" class="black text-sm font-medium text-gray-700">Phone number</label>
                             <div class="mt-1">
-                                <input type="text" id="tel_number"name="tel_number"
+                                <input type="text" id="tel_number" name="tel_number"
                                     class="black w-full appearance-none rounded-md ">
                             </div>
                         </div>
@@ -49,6 +49,18 @@
                             <div class="mt-1">
                                 <input type="datetime-local" id="res_date" name="res_date"
                                     class="black w-full appearance-none rounded-md ">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-6">
+                            <label for="guest_number" class="black text-sm font-medium text-gray-700">Guest
+                                Number</label>
+                            <div class="mt-1">
+                                <input type="number" id="guest_number" name="guest_number"
+                                    class="black w-full 
+                                    appearance-none
+                                    bg-white
+                                    border border-gray-400 rounded-md 
+                                    py-2 px-3 test-base">
                             </div>
                         </div>
                         <div class="sm:col-span-6">
