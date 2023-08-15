@@ -19,11 +19,7 @@
                             <label for="name" class="black text-sm font-medium text-gray-700">Name</label>
                             <div class="mt-1">
                                 <input type="text" id="name" name="name"
-                                    class="black w-full 
-                                    appearance-none
-                                    bg-white
-                                    border border-gray-400 rounded-md 
-                                    py-2 px-3 test-base ">
+                                    class="black w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base loading-normail transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror">
                             </div>
                             @error('name')
                                 <div class="text-sm text-red-400">
@@ -36,11 +32,7 @@
                                 Number</label>
                             <div class="mt-1">
                                 <input type="number" id="guest_number" name="guest_number"
-                                    class="black w-full 
-                                    appearance-none
-                                    bg-white
-                                    border border-gray-400 rounded-md 
-                                    py-2 px-3 test-base">
+                                    class="black w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base loading-normail transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('guest_number') border-red-400 @enderror">
                             </div>
                             @error('guest_number')
                                 <div class="text-sm text-red-400">

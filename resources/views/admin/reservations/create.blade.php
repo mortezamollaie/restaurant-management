@@ -19,7 +19,7 @@
                             <label for="first_name" class="black text-sm font-medium text-gray-700">First Name</label>
                             <div class="mt-1">
                                 <input type="text" id="first_name" name="first_name"
-                                    class="black w-full appearance-none rounded-md ">
+                                    class="black w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base loading-normail transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('first_name') border-red-400 @enderror">
                             </div>
                             @error('first_name')
                                 <div class="text-sm text-red-400">
@@ -31,7 +31,7 @@
                             <label for="last_name" class="black text-sm font-medium text-gray-700">Last Name</label>
                             <div class="mt-1">
                                 <input type="text" id="last_name" name="last_name"
-                                    class="black w-full appearance-none rounded-md ">
+                                    class="black w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base loading-normail transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('last_name') border-red-400 @enderror">
                             </div>
                             @error('last_name')
                                 <div class="text-sm text-red-400">
@@ -43,7 +43,7 @@
                             <label for="email" class="black text-sm font-medium text-gray-700">Email</label>
                             <div class="mt-1">
                                 <input type="email" id="email" name="email"
-                                    class="black w-full appearance-none rounded-md ">
+                                    class="black w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base loading-normail transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('email') border-red-400 @enderror">
                             </div>
                             @error('email')
                                 <div class="text-sm text-red-400">
@@ -55,7 +55,7 @@
                             <label for="tel_number" class="black text-sm font-medium text-gray-700">Phone number</label>
                             <div class="mt-1">
                                 <input type="text" id="tel_number" name="tel_number"
-                                    class="black w-full appearance-none rounded-md ">
+                                    class="black w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base loading-normail transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('tel_number') border-red-400 @enderror">
                             </div>
                             @error('tel_number')
                                 <div class="text-sm text-red-400">
@@ -68,7 +68,7 @@
                                 Date</label>
                             <div class="mt-1">
                                 <input type="datetime-local" id="res_date" name="res_date"
-                                    class="black w-full appearance-none rounded-md ">
+                                    class="black w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base loading-normail transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('res_date') border-red-400 @enderror">
                             </div>
                             @error('res_date')
                                 <div class="text-sm text-red-400">
@@ -81,11 +81,7 @@
                                 Number</label>
                             <div class="mt-1">
                                 <input type="number" id="guest_number" name="guest_number"
-                                    class="black w-full 
-                                    appearance-none
-                                    bg-white
-                                    border border-gray-400 rounded-md 
-                                    py-2 px-3 test-base">
+                                    class="black w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base loading-normail transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('res_date') border-red-400 @enderror">
                             </div>
                             @error('guest_number')
                                 <div class="text-sm text-red-400">
