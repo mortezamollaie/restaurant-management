@@ -26,6 +26,11 @@
                                     border border-gray-400 rounded-md 
                                     py-2 px-3 test-base ">
                             </div>
+                            @error('name')
+                                <div class="text-sm text-red-400">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                         </div>
                         <div class="sm:col-span-6">
                             <label for="guest_number" class="black text-sm font-medium text-gray-700">Guest
@@ -39,6 +44,11 @@
                                     border border-gray-400 rounded-md 
                                     py-2 px-3 test-base">
                             </div>
+                            @error('guest_number')
+                                <div class="text-sm text-red-400">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                         </div>
                         <div class="sm:col-span-6">
                             <label for="status" class="black text-sm font-medium text-gray-700">Status</label>

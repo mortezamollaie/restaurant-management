@@ -21,6 +21,11 @@
                                 <input type="text" id="first_name" name="first_name"
                                     class="black w-full appearance-none rounded-md ">
                             </div>
+                            @error('first_name')
+                                <div class="text-sm text-red-400">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                         </div>
                         <div class="sm:col-span-6">
                             <label for="last_name" class="black text-sm font-medium text-gray-700">Last Name</label>
@@ -28,6 +33,11 @@
                                 <input type="text" id="last_name" name="last_name"
                                     class="black w-full appearance-none rounded-md ">
                             </div>
+                            @error('last_name')
+                                <div class="text-sm text-red-400">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                         </div>
                         <div class="sm:col-span-6">
                             <label for="email" class="black text-sm font-medium text-gray-700">Email</label>
@@ -35,6 +45,11 @@
                                 <input type="email" id="email" name="email"
                                     class="black w-full appearance-none rounded-md ">
                             </div>
+                            @error('email')
+                                <div class="text-sm text-red-400">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                         </div>
                         <div class="sm:col-span-6">
                             <label for="tel_number" class="black text-sm font-medium text-gray-700">Phone number</label>
@@ -42,6 +57,11 @@
                                 <input type="text" id="tel_number" name="tel_number"
                                     class="black w-full appearance-none rounded-md ">
                             </div>
+                            @error('tel_number')
+                                <div class="text-sm text-red-400">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                         </div>
                         <div class="sm:col-span-6">
                             <label for="res_date" class="black text-sm font-medium text-gray-700">Reservation
@@ -50,6 +70,11 @@
                                 <input type="datetime-local" id="res_date" name="res_date"
                                     class="black w-full appearance-none rounded-md ">
                             </div>
+                            @error('res_date')
+                                <div class="text-sm text-red-400">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                         </div>
                         <div class="sm:col-span-6">
                             <label for="guest_number" class="black text-sm font-medium text-gray-700">Guest
@@ -62,6 +87,11 @@
                                     border border-gray-400 rounded-md 
                                     py-2 px-3 test-base">
                             </div>
+                            @error('guest_number')
+                                <div class="text-sm text-red-400">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                         </div>
                         <div class="sm:col-span-6">
                             <label for="status" class="black text-sm font-medium text-gray-700">Table</label>

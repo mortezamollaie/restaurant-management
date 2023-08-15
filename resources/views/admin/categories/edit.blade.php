@@ -23,6 +23,11 @@
                                 <input type="text" id="name" name="name" value="{{ $category->name }}"
                                     class="black w-full appearance-none rounded-md ">
                             </div>
+                            @error('name')
+                                <div class="text-sm text-red-400">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                         </div>
                         <div class="sm:col-span-6">
                             <label for="image" class="black text-sm font-medium text-gray-700">Image</label>
@@ -33,6 +38,11 @@
                                 <input type="file" id="image" name="image"
                                     class="black w-full appearance-none bg-white border border-gray-400 rounded-md  py-2 px-2">
                             </div>
+                            @error('image')
+                                <div class="text-sm text-red-400">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                         </div>
                         <div class="sm:col-span-6">
                             <label for="description" class="black text-sm font-medium text-gray-700">Description</label>
@@ -42,6 +52,11 @@
                                     {{ $category->description }}
                                 </textarea>
                             </div>
+                            @error('description')
+                                <div class="text-sm text-red-400">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                         </div>
                         <div class="mt-6 p-4">
                             <button type="submit"
