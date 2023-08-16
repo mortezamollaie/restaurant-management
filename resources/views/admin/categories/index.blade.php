@@ -20,6 +20,7 @@
                             <th scope="col" class="px-6 py-3">name</th>
                             <th scope="col" class="px-6 py-3">image</th>
                             <th scope="col" class="px-6 py-3">Description</th>
+                            <th scope="col" class="px-6 py-3">Edit</th>
                         </tr>
                     </thead>
                     <tbody>
