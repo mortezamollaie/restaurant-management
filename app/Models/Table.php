@@ -6,6 +6,7 @@ use App\Enums\TableStatus;
 use App\Enums\TableLocation;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+// use App\Models\Reservation;
 
 class Table extends Model
 {
@@ -16,4 +17,8 @@ class Table extends Model
         'status'=> TableStatus::Class,
         'location' => TableLocation::Class,
     ];
+
+    public function reservations(){
+        return $this->hasMany(Reservation::class);
+    }
 }
