@@ -52,7 +52,7 @@
                                     {{ $reservation->res_date }}
                                 </td>
                                 <td class="px-6 py-4 text-sm text-gray-500 whitespace-nowrap dark:text-gray">
-                                    {{ $reservation->table }}
+                                    {{ $reservation->table_id }}
                                 </td>
                                 <td class="px-6 py-4 text-sm text-gray-500 whitespace-nowrap dark:text-gray">
                                     {{ $reservation->guest_number }}
